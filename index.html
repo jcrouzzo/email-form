@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 </head>
 <body>
     
 <form action='https://formspree.io/f/mgerlagr' method="POST">
     <div>
     <label for='name'>Name</label>
-    <input name='name' type='text' placeholder='Enter your full name please'>
+    <input name='name' class='form-controller' type='text' placeholder='Enter your full name please'>
     </div>
     <div>
     <label for='email'>Email</label>
-    <input name='email' type='email' placeholder='Enter your email address'>
+    <input name='email' class='form-controller' type='email' placeholder='Enter your email address'>
     </div>
     <div>
     <label for='message'>Message</label>
-    <textarea name='message' placeholder='Enter your message here please'></textarea>
+    <textarea name='message' class='form-controller' placeholder='Enter your message here please'></textarea>
     </div>
     <div>
     <button type='submit'>Submit</button>
